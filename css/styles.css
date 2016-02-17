@@ -177,21 +177,11 @@ footer {
 }
 
 .footer-nav {
-  float: right;
-  margin: 14px 0;
+  display: none;
 }
 
-.footer-nav li {
-  display: inline-block;
-}
-
-.footer-nav li a {
-  font-size: 0.7em;
-}
-
-.footer-nav a:hover {
-  color: #bdbdbd;
-  transition: 0.5s;
+.mobile-footnav p {
+  float: right;	
 }
 
 /********** MEDIA QUERIES *********/
@@ -238,6 +228,29 @@ footer {
 
   .profile-pic {
     width: 200px;
+  }
+  
+  .mobile-footnav {
+    display: none;	
+  }
+  
+  .footer-nav {
+    display: block;
+    float: right;
+    margin: 14px 0;
+  }
+  
+  .footer-nav li {
+    display: inline-block;
+  }
+
+  .footer-nav li a {
+    font-size: 0.7em;
+  }
+
+  .footer-nav a:hover {
+    color: #bdbdbd;
+    transition: 0.5s;
   }
 
   .footer-name, .footer-nav {
@@ -289,9 +302,6 @@ footer {
 
   .intro {
     font-size: 1.8em;
-  }
-
-  .profile-pic {
   }
 
   .footer-name, .footer-nav {
